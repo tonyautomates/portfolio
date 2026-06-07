@@ -131,12 +131,6 @@ li {
   color: var(--text);
 }
 
-.nav-actions {
-  display: flex;
-  align-items: center;
-  gap: 0.7rem;
-}
-
 .theme-button,
 .menu-button {
   border: 1px solid var(--border);
@@ -151,6 +145,10 @@ li {
 .theme-button:hover,
 .menu-button:hover {
   border-color: var(--text);
+}
+
+.logo-theme-button {
+  margin-right: auto;
 }
 
 .menu-button {
@@ -356,10 +354,6 @@ li {
 @media (max-width: 850px) {
   .menu-button {
     display: inline-block;
-  }
-
-  .nav-actions {
-    margin-left: auto;
   }
 
   .nav-links {
