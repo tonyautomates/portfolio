@@ -6,8 +6,20 @@
   --muted-text: #666666;
   --border: #dddddd;
   --accent: #111111;
+  --button-text: #ffffff;
   --max-width: 1100px;
   --radius: 18px;
+}
+
+body.dark-mode {
+  --background: #111111;
+  --surface: #1a1a1a;
+  --surface-muted: #171717;
+  --text: #f4f4f4;
+  --muted-text: #b5b5b5;
+  --border: #333333;
+  --accent: #f4f4f4;
+  --button-text: #111111;
 }
 
 * {
@@ -84,7 +96,7 @@ li {
   position: sticky;
   top: 0;
   z-index: 10;
-  background: rgba(247, 247, 244, 0.95);
+  background: var(--background);
   border-bottom: 1px solid var(--border);
 }
 
@@ -119,14 +131,30 @@ li {
   color: var(--text);
 }
 
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.theme-button,
 .menu-button {
-  display: none;
   border: 1px solid var(--border);
   background: var(--surface);
+  color: var(--text);
   padding: 0.6rem 0.9rem;
   border-radius: 999px;
   font: inherit;
   cursor: pointer;
+}
+
+.theme-button:hover,
+.menu-button:hover {
+  border-color: var(--text);
+}
+
+.menu-button {
+  display: none;
 }
 
 .hero {
@@ -162,7 +190,7 @@ li {
 
 .primary-button {
   background: var(--accent);
-  color: #ffffff;
+  color: var(--button-text);
 }
 
 .secondary-button {
@@ -328,6 +356,10 @@ li {
 @media (max-width: 850px) {
   .menu-button {
     display: inline-block;
+  }
+
+  .nav-actions {
+    margin-left: auto;
   }
 
   .nav-links {
