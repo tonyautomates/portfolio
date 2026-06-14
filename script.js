@@ -1,6 +1,7 @@
 const menuButton = document.getElementById("menuButton");
 const navLinks = document.getElementById("navLinks");
 const themeButton = document.getElementById("themeButton");
+const projectToggles = document.querySelectorAll(".project-toggle");
 
 const savedTheme = localStorage.getItem("theme");
 
@@ -27,6 +28,24 @@ if (themeButton) {
     }
 
     updateThemeButtonText();
+  });
+}
+
+if (projectToggles.length > 0) {
+  projectToggles.forEach(function (toggleButton) {
+    toggleButton.addEventListener("click", function () {
+      const projectItem = toggleButton.closest(".project-item");
+      if (!projectItem) return;
+
+      const projectDetails = projectItem.querySelector(".project-details");
+      if (!projectDetails) return;
+
+      const isExpanded = toggleButton.getAttribute("aria-expanded") === "true";
+
+      toggleButton.setAttribute("aria-expanded", String(!isExpanded));
+      toggleButton.textContent = isExpanded ? "Expand project" : "Collapse project";
+      projectDetails.hidden = isExpanded;
+    });
   });
 }
 
