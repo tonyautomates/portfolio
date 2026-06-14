@@ -284,6 +284,12 @@ li {
 .project-item {
   padding: 1.5rem;
   display: grid;
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.project-summary {
+  display: grid;
   grid-template-columns: 1fr auto;
   gap: 2rem;
   align-items: start;
@@ -303,6 +309,54 @@ li {
   color: var(--muted-text);
   font-size: 0.9rem;
   background: var(--background);
+}
+
+.project-actions {
+  display: flex;
+}
+
+.project-toggle {
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+  padding: 0.8rem 1rem;
+  border-radius: 999px;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.project-toggle:hover {
+  border-color: var(--text);
+}
+
+.project-details {
+  display: grid;
+  gap: 1rem;
+  padding-top: 0.25rem;
+  border-top: 1px solid var(--border);
+}
+
+.project-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.project-detail-card {
+  padding: 1.25rem;
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) - 6px);
+}
+
+.project-detail-card h3 {
+  margin-bottom: 0.8rem;
+}
+
+.project-detail-card p,
+.project-detail-card ul {
+  margin-bottom: 0;
 }
 
 .idea-item {
@@ -400,5 +454,10 @@ li {
 
   .project-meta {
     justify-content: flex-start;
+  }
+
+  .project-summary,
+  .project-detail-grid {
+    grid-template-columns: 1fr;
   }
 }

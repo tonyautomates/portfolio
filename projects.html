@@ -43,48 +43,214 @@
         <div class="project-list">
 
           <article class="project-item">
-            <div>
-              <p class="label">Website</p>
-              <h2>Personal Portfolio</h2>
-              <p>
-                A clean personal website built to practise HTML, CSS, Git, GitHub, and project structure.
-              </p>
+            <div class="project-summary">
+              <div>
+                <p class="label">AI automation</p>
+                <h2>AI Operations Assistant</h2>
+                <p>
+                  A workflow assistant designed to automate repetitive business tasks like inbox triage, quote
+                  drafting, lead sorting, status updates, and internal follow-ups without creating messy manual work.
+                </p>
+              </div>
+
+              <div class="project-meta">
+                <span>Automation</span>
+                <span>AI Workflows</span>
+                <span>Operations</span>
+              </div>
             </div>
 
-            <div class="project-meta">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>GitHub</span>
+            <div class="project-actions">
+              <button class="project-toggle" type="button" aria-expanded="false">
+                Expand project
+              </button>
+            </div>
+
+            <div class="project-details" hidden>
+              <p>
+                The main goal is to build a system that reduces small operational delays across a business. Instead of
+                using AI only for chat, this project focuses on real workflow execution: reading incoming requests,
+                classifying urgency, generating a draft response, logging the task, and pushing the right next step to
+                a dashboard or team channel.
+              </p>
+              <p>
+                I want the assistant to support structured decision-making rather than random automation. That means
+                using clear trigger conditions, approval checkpoints, fallback logic, and a record of what the system
+                did so the operator can trust it and improve it over time.
+              </p>
+
+              <div class="project-detail-grid">
+                <div class="project-detail-card">
+                  <h3>Core functions</h3>
+                  <ul>
+                    <li>Classify inbound messages by topic, urgency, and required action.</li>
+                    <li>Draft replies, meeting summaries, and short client updates.</li>
+                    <li>Move tasks into a simple workflow with human approval where needed.</li>
+                    <li>Generate a daily operations report with bottlenecks and next actions.</li>
+                  </ul>
+                </div>
+
+                <div class="project-detail-card">
+                  <h3>Why it matters</h3>
+                  <ul>
+                    <li>Reduces time lost to repeated admin work and context switching.</li>
+                    <li>Keeps business communication more consistent and faster to respond.</li>
+                    <li>Creates a repeatable process that can scale with more clients or projects.</li>
+                    <li>Builds practical experience in AI systems that support real operations.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="project-detail-card">
+                <h3>Planned build scope</h3>
+                <p>
+                  The first version would connect a form, email inbox, or message feed into a lightweight processing
+                  pipeline. From there the system would tag the request, create a draft output, store the result, and
+                  wait for operator approval before sending anything important. Later versions could include customer
+                  memory, CRM syncing, and better reporting on time saved per week.
+                </p>
+              </div>
             </div>
           </article>
 
           <article class="project-item">
-            <div>
-              <p class="label">Coming soon</p>
-              <h2>Automation Notes Hub</h2>
-              <p>
-                A simple page or tool for organising what I learn in automation and technical school.
-              </p>
+            <div class="project-summary">
+              <div>
+                <p class="label">AI anti-drone systems</p>
+                <h2>Drone Threat Detection Platform</h2>
+                <p>
+                  A concept platform for detecting, classifying, and tracking suspicious drone activity by combining
+                  sensor feeds, visual analysis, alert logic, and operator review into one clearer control layer.
+                </p>
+              </div>
+
+              <div class="project-meta">
+                <span>Computer Vision</span>
+                <span>Defense Tech</span>
+                <span>Sensors</span>
+              </div>
             </div>
 
-            <div class="project-meta">
-              <span>Planning</span>
-              <span>Learning</span>
+            <div class="project-actions">
+              <button class="project-toggle" type="button" aria-expanded="false">
+                Expand project
+              </button>
+            </div>
+
+            <div class="project-details" hidden>
+              <p>
+                This project is focused on the software side of modern anti-drone systems: how to interpret incoming
+                signals quickly, reduce false alarms, and give the operator a better picture of what is happening. The
+                system is not just about seeing a drone, but about deciding whether it is normal, risky, or an active
+                threat that needs escalation.
+              </p>
+              <p>
+                The platform would fuse camera input, radar-style detection data, acoustic cues, and rule-based alert
+                thresholds into a single interface. AI would be used to prioritize likely threats, highlight unusual
+                movement patterns, and support faster human decisions instead of flooding the operator with noise.
+              </p>
+
+              <div class="project-detail-grid">
+                <div class="project-detail-card">
+                  <h3>System focus</h3>
+                  <ul>
+                    <li>Multi-sensor event fusion for more reliable detection than a single source.</li>
+                    <li>Visual classification of drone type, flight behavior, and probable intent.</li>
+                    <li>Threat scoring based on route, altitude, speed, and protected zone proximity.</li>
+                    <li>Operator dashboards that show what matters first instead of raw data overload.</li>
+                  </ul>
+                </div>
+
+                <div class="project-detail-card">
+                  <h3>Engineering challenges</h3>
+                  <ul>
+                    <li>Reducing false positives from birds, weather, noise, or irrelevant motion.</li>
+                    <li>Keeping latency low enough for real-time response decisions.</li>
+                    <li>Making the model explain its alerts in a useful way for human operators.</li>
+                    <li>Designing a system that stays useful even when one sensor feed is weak.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="project-detail-card">
+                <h3>What I want to explore</h3>
+                <p>
+                  I want to understand how practical defense-oriented AI systems are designed from a systems thinking
+                  perspective, especially how detection, classification, alerting, and decision support work together.
+                  Even at concept stage, this project helps me think more seriously about reliability, safety,
+                  interfaces, and how software can support complex technical environments.
+                </p>
+              </div>
             </div>
           </article>
 
           <article class="project-item">
-            <div>
-              <p class="label">Coming soon</p>
-              <h2>Business Idea Tracker</h2>
-              <p>
-                A lightweight system for storing problems, ideas, potential customers, and next actions.
-              </p>
+            <div class="project-summary">
+              <div>
+                <p class="label">3D printing</p>
+                <h2>Functional 3D Printing Lab</h2>
+                <p>
+                  A practical project focused on designing and printing useful parts, test fixtures, and small custom
+                  components that solve real problems instead of producing decorative prints only.
+                </p>
+              </div>
+
+              <div class="project-meta">
+                <span>CAD</span>
+                <span>Prototyping</span>
+                <span>Fabrication</span>
+              </div>
             </div>
 
-            <div class="project-meta">
-              <span>Business</span>
-              <span>Research</span>
+            <div class="project-actions">
+              <button class="project-toggle" type="button" aria-expanded="false">
+                Expand project
+              </button>
+            </div>
+
+            <div class="project-details" hidden>
+              <p>
+                The idea behind this project is to treat 3D printing as an engineering tool. Instead of printing random
+                objects, I want to build a process for identifying a physical problem, sketching a solution, designing
+                a part, testing fit and strength, and refining the print until it becomes genuinely useful.
+              </p>
+              <p>
+                The project would include simple jigs, cable guides, machine brackets, sensor mounts, storage inserts,
+                and other functional pieces that support workshop, automation, or electronics work. Over time it could
+                become a small library of repeatable designs with print notes, failure lessons, and material choices.
+              </p>
+
+              <div class="project-detail-grid">
+                <div class="project-detail-card">
+                  <h3>Build direction</h3>
+                  <ul>
+                    <li>Design parts for actual use cases instead of one-off visual experiments.</li>
+                    <li>Track tolerances, material strength, and print orientation decisions.</li>
+                    <li>Create iteration notes so each version improves based on evidence.</li>
+                    <li>Combine design thinking with hands-on testing and workshop practicality.</li>
+                  </ul>
+                </div>
+
+                <div class="project-detail-card">
+                  <h3>Outputs I want</h3>
+                  <ul>
+                    <li>A portfolio of functional prints with clear before-and-after problem solving.</li>
+                    <li>Better understanding of how CAD decisions affect real physical performance.</li>
+                    <li>Reusable parts for electronics, automation, and general workspace organisation.</li>
+                    <li>A more disciplined product mindset around prototyping and improvement.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="project-detail-card">
+                <h3>Longer-term value</h3>
+                <p>
+                  This project helps connect digital design with physical execution. It supports problem solving,
+                  fabrication skills, and product thinking at the same time. It also fits naturally with future AI and
+                  automation work, because many technical builds eventually need custom mounts, cases, adapters, or
+                  testing tools that are easiest to prototype with 3D printing.
+                </p>
+              </div>
             </div>
           </article>
 
